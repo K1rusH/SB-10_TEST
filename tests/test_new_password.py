@@ -1,5 +1,5 @@
 import string
-from password.new_password import generate_password
+from password.new_password import *
 
 def test_password_characters():
     valid_characters = string.ascii_letters + string.digits + string.punctuation
