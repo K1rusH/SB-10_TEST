@@ -6,7 +6,7 @@ def test_password_characters():
     valid_characters = string.ascii_letters + string.digits + string.punctuation
     password = generate_password(100)  # Генерируем длинный пароль для более надежной проверки
     for char in password:
-        assert char in valid_characters
+        assert char in valid_characterssss
 
 """
 Допиши еще один тест из предложенных. Или придумай свой.
