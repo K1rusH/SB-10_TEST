@@ -6,7 +6,7 @@ def test_password_characters():
     valid_characters = string.ascii_letters + string.digits + string.punctuation
     password = generate_password(100)  # Генерируем длинный пароль для более надежной проверки
     for char in password:
-        assert char in valid_characters
+        assert char in valid_characterssss
 
 def test_password_length():
     """Тест, что длина пароля соответствует заданной"""
@@ -31,4 +31,6 @@ def test_password_more_than0():
 Допиши еще один тест из предложенных. Или придумай свой.
 Если сможешь написать больше, то будет круто!
 
+Тест, что длина пароля соответствует заданной
+Тест, что два сгенерированных подряд пароля различаются
 """
