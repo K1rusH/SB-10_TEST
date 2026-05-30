@@ -8,6 +8,25 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+def test_password_too_long():
+    """Тест, что пароль длиннее 12 символов не принимается"""
+    password = "verylongpassword123"
+    assert len(password) > 12
+
+def test_password_too_short():
+    """Тест, что пароль koroche 12 символов не принимается"""
+    password = "shortpass"
+    assert len(password) < 12
+
+def test_password_short():
+    """Тест, что пароль 1 символов не принимается"""
+    password = "s"
+    assert len(password) < 12
+
+
+
+
+
 """
 Допиши еще один тест из предложенных. Или придумай свой.
 Если сможешь написать больше, то будет круто!
